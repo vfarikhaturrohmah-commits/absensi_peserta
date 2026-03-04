@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Absensi LPK Takashi</title>
+    <script src="https://unpkg.com/html5-qrcode"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="logo-wrapper">
+                <img src="logotks.png" alt="Logo">
+            </div>
+            <h1>LPK TAKASHI</h1>
+            <p>Scan QR Code untuk Absensi</p>
+        </div>
+        <div class="scanner-section">
+            <div id="reader"></div>
+        </div>
+        <div id="result-box" class="hidden">
+            <span id="status-text">⏳ MENCATAT...</span>
+            <div class="info-card">
+                <div class="info-row"><span class="label">ID SISWA</span><span class="value" id="student-id">-</span></div>
+                <div class="info-row"><span class="label">NAMA</span><span class="value" id="student-name">-</span></div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
